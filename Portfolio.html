@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harish | Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* FORCE WHITE TEXT */
+        body, p, li, span, a,
+        h1, h2, h3, h4, h5, h6 {
+            color: #ffffff !important;
+        }
+
+        body {
+            margin: 0;
+            background-color: #0b1220;
+            font-size: 18px;
+        }
+
+        a { text-decoration: none; }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        .hero * {
+            background: transparent !important;
+        }
+
+        h1 { font-size: 4rem; }
+
+        /* SECTION TITLE */
+        .section-title {
+            border-left: 6px solid #3b82f6;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* CARD */
+        .card {
+            background-color: #111827;
+            border: 2px solid #2563eb;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(37,99,235,0.25);
+            transition: all 0.35s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 45px rgba(59,130,246,0.55);
+        }
+
+        /* TECH SKILL BUTTONS */
+        .skills-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .skill-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 30px;
+            border: 2px solid #3b82f6;
+            background: transparent;
+            color: #ffffff;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .skill-btn i {
+            font-size: 20px;
+            color: #93c5fd;
+        }
+
+        .skill-btn:hover {
+            background: #2563eb;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 0 20px rgba(59,130,246,0.7);
+        }
+
+        /* WHATSAPP */
+        .whatsapp {
+            color: #22c55e !important;
+        }
+
+        footer {
+            background-color: #020617;
+        }
+
+        .project-meta strong {
+            color: #93c5fd !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1 class="fw-bold">HARISH</h1>
+        <p class="fs-2">Software Developer</p>
+
+        <p class="fs-4">
+            <i class="bi bi-linkedin"></i>
+            <a href="https://www.linkedin.com/in/harish5630145/" target="_blank">
+                Harish G
+            </a>
+        </p>
+
+        <p class="fs-4">
+            <i class="bi bi-whatsapp whatsapp"></i>
+            <a href="https://wa.me/917695909063" target="_blank" class="whatsapp">
+                +91 76959 09063
+            </a>
+        </p>
+    </div>
+</section>
+
+<div class="container my-5">
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="mb-5">
+        <h2 class="section-title">Professional Summary</h2>
+        <div class="card p-5">
+            <p>
+                     Result-oriented Software Developer with over 9 months of experience in developing
+                scalable and high-performance backend applications using .NET Core Web API, C#,
+                and MS SQL Server. Strong expertise in backend Software Development Life Cycle (SDLC),
+                API development, and database design. Proven ability to analyze complex business
+                requirements and deliver reliable, maintainable, and performance-optimized solutions.
+                Possesses a basic understanding of Microsoft Azure cloud services including PaaS,
+                SaaS, and service integration scenarios.
+            </p>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SUMMARY -->
+    <section class="mb-5">
+        <h2 class="section-title">Experience Summary</h2>
+        <div class="card p-5">
+            <ul>
+               <li>Over 9 months of experience in .NET Core Web API using C# and MS SQL Server.</li>
+                <li>Strong expertise in backend Software Development Life Cycle (SDLC).</li>
+                <li>Ability to transform complex business requirements into scalable and maintainable solutions.</li>
+                <li>Experience creating API documentation using Swagger (OpenAPI Specification).</li>
+                <li>Hands-on experience with LINQ for efficient data querying.</li>
+                <li>Experience implementing Authentication and Authorization.</li>
+                <li>Hands-on experience developing backend components and integrating REST APIs.</li>
+                <li>Experience writing database objects such as Stored Procedures and Functions.</li>
+                <li>Worked in Agile methodology including daily scrum meetings and retrospectives.</li>
+                <li>Implemented Generics to ensure type safety and reduce runtime errors.</li>
+                <li>Used Interfaces to improve usability, testability, and performance.</li>
+                <li>Basic understanding of Microsoft Azure including PaaS, SaaS, and service integration.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS (ICON + TEXT BUTTONS) -->
+    <section class="mb-5">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="card p-4">
+            <div class="skills-wrapper">
+                <div class="skill-btn"><i class="fa-solid fa-code"></i> C#</div>
+                <div class="skill-btn"><i class="fa-solid fa-database"></i> SQL</div>
+                <div class="skill-btn"><i class="fa-brands fa-microsoft"></i> .NET Core</div>
+                <div class="skill-btn"><i class="fa-solid fa-globe"></i> ASP.NET</div>
+                <div class="skill-btn"><i class="fa-solid fa-server"></i> MS SQL Server</div>
+                <div class="skill-btn"><i class="fa-brands fa-git-alt"></i> Git</div>
+                <div class="skill-btn"><i class="fa-brands fa-gitlab"></i> GitLab</div>
+                <div class="skill-btn"><i class="fa-solid fa-paper-plane"></i> Postman</div>
+                <div class="skill-btn"><i class="fa-solid fa-file-lines"></i> Swagger</div>
+                <div class="skill-btn"><i class="fa-solid fa-cloud"></i> Microsoft Azure</div>
+                <div class="skill-btn"><i class="fa-solid fa-people-group"></i> Agile</div>
+                <div class="skill-btn"><i class="fa-solid fa-diagram-project"></i> Scrum</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT EXPERIENCE -->
+    <section>
+        <h2 class="section-title">Project Experience</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-5 h-100">
+                    <h4>LENOVO – ISO</h4>
+                    <p class="project-meta">
+                        <strong>Technologies:</strong> ASP.NET, MS SQL Server<br>
+						<strong>Source Control:</strong> Git<br>
+                        <strong>Duration:</strong> 2 Months
+                    </p>
+                    <ul>
+                        <li>Developed ISO compliance modules for EMS, QMS, and OHS.</li>
+                        <li>Automated audits, approvals, and corrective actions.</li>
+                        <li>Ensured process standardization.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-5 h-100">
+                    <h4>LENOVO – Digital Security 2.0</h4>
+                    <p class="project-meta">
+                        <strong>Technologies:</strong> ASP.NET, MS SQL Server<br>
+                        <strong>Source Control:</strong> Git<br>
+                        <strong>Duration:</strong> 8 Month
+                    </p>
+                    <ul>
+                        <li>Built backend services for salary revision.</li>
+                        <li>Implemented role-based access control.</li>
+                        <li>Supported performance rating workflows.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-4 mt-5">
+    <p class="fs-5 mb-1">© 2026 Harish | Software Developer</p>
+    <p class="fs-5">
+        <i class="bi bi-whatsapp whatsapp"></i>
+        <a href="https://wa.me/917695909063" target="_blank" class="whatsapp">
+            +91 76959 09063
+        </a>
+        &nbsp; | &nbsp;
+        <i class="bi bi-linkedin"></i>
+        <a href="https://www.linkedin.com/in/harish5630145/" target="_blank">
+            Harish G
+        </a>
+    </p>
+</footer>
+
+</body>
+</html>
