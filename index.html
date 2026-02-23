@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harish | .NET Developer Portfolio</title>
+    <meta name="description"
+        content="Results-driven .NET Developer with experience in ASP.NET Core, C#, microservices, and RESTful APIs. Explore Harish's projects, skills, and professional journey." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animated">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>H<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#ai-tools" class="nav-link">AI Tools</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+                <li>
+                    <a href="https://docs.google.com/document/d/12Pq0ud7dIc7TRy4MyaT0mepz4jh_bcec/edit?usp=drivesdk&ouid=115026524606690086604&rtpof=true&sd=true"
+                        target="_blank" rel="noopener" class="nav-link nav-resume" id="nav-resume-btn"
+                        title="View Resume">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15"
+                            height="15">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Resume
+                    </a>
+                </li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Harish</span>
+            </h1>
+            <div class="hero-role">
+                <span class="role-prefix">&gt;_</span>
+                <span class="typewriter" id="typewriter"></span>
+            </div>
+            <p class="hero-desc">
+                Results-driven <strong>.NET Developer</strong> with hands-on experience building scalable, secure, and
+                high-performance backend applications. Specialized in microservices, RESTful APIs, and enterprise
+                solutions.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get in Touch</span>
+                </a>
+                <a href="https://docs.google.com/document/d/12Pq0ud7dIc7TRy4MyaT0mepz4jh_bcec/edit?usp=drivesdk&ouid=115026524606690086604&rtpof=true&sd=true"
+                    target="_blank" rel="noopener" class="btn btn-resume" id="hero-resume-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    <span>View Resume</span>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Major Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">AI Tools Used</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-card" id="codeCard">
+                <div class="code-card-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                    <span class="code-filename">Developer.cs</span>
+                </div>
+                <div class="code-body">
+                    <pre><code><span class="kw">public class</span> <span class="cls">Harish</span> : <span class="cls">IDeveloper</span>
+{
+  <span class="kw">public string</span> Name <span class="op">=</span> <span class="str">"Harish"</span>;
+  <span class="kw">public string</span> Role <span class="op">=</span> <span class="str">".NET Developer"</span>;
+  <span class="kw">public int</span> Experience <span class="op">=</span> <span class="num">1</span>;
+
+  <span class="kw">public</span> List&lt;<span class="cls">string</span>&gt; Skills() <span class="op">=&gt;</span>
+    [<span class="str">"ASP.NET Core"</span>, <span class="str">"C#"</span>,
+     <span class="str">"Microservices"</span>, <span class="str">"SQL"</span>,
+     <span class="str">"REST APIs"</span>, <span class="str">"JWT/OAuth2"</span>];
+
+  <span class="kw">public bool</span> IsAvailable() <span class="op">=&gt;</span> <span class="kw">true</span>;
+}</code></pre>
+                </div>
+            </div>
+            <div class="floating-badge badge-dotnet">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg"
+                    alt=".NET" width="24" height="24" />
+                .NET Core
+            </div>
+            <div class="floating-badge badge-csharp">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+                    alt="C#" width="24" height="24" />
+                C#
+            </div>
+            <div class="floating-badge badge-sql">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                    alt="SQL" width="24" height="24" />
+                SQL Server
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- About / Professional Summary -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Professional <span class="gradient-text">Summary</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-col">
+                    <p class="about-lead">
+                        A passionate backend engineer who turns complex business requirements into elegant, scalable
+                        solutions.
+                    </p>
+                    <p class="about-body">
+                        With over <strong>1 year of hands-on experience</strong> in ASP.NET Core, C#, and MVC
+                        architecture, I design and implement microservices-based distributed systems with a laser focus
+                        on performance optimization and code quality.
+                    </p>
+                    <p class="about-body">
+                        I champion clean architecture principles and thrive in Agile/Scrum environments — from daily
+                        stand-ups to sprint retrospectives. I'm equally comfortable communicating technical insights to
+                        stakeholders and collaborating with cross-functional engineering teams.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🏗️</div>
+                            <div>
+                                <strong>Architecture</strong>
+                                <span>Microservices & Layered Design</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🔐</div>
+                            <div>
+                                <strong>Security</strong>
+                                <span>JWT, OAuth2 Authentication</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">⚡</div>
+                            <div>
+                                <strong>Performance</strong>
+                                <span>Optimized Queries & APIs</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🔄</div>
+                            <div>
+                                <strong>Agile</strong>
+                                <span>Scrum & Sprint Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card-col">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-inner">H</div>
+                        </div>
+                        <h3 class="profile-name">Harish</h3>
+                        <p class="profile-role">.NET Developer</p>
+                        <div class="profile-info">
+                            <div class="info-row">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                                </svg>
+                                <span>7694909063</span>
+                            </div>
+                            <div class="info-row">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                                <a href="https://www.linkedin.com/in/harish5630145" target="_blank"
+                                    rel="noopener">LinkedIn Profile</a>
+                            </div>
+                            <div class="info-row">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <path d="M8 21h8M12 17v4" />
+                                </svg>
+                                <span>Twilight IT Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-dark" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Employment <span class="gradient-text">History</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-role">.NET Developer</h3>
+                                <p class="timeline-company">Twilight IT Solutions</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-duration">2025 – 2026</span>
+                                <span class="timeline-badge">1 Years</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-points">
+                            <li>Designed and developed scalable backend applications using <strong>ASP.NET Core</strong>
+                                and <strong>C#</strong>, serving enterprise clients.</li>
+                            <li>Built microservices architectures using <strong>.NET Core</strong> with focus on
+                                distributed systems and inter-service communication.</li>
+                            <li>Engineered and consumed <strong>RESTful APIs</strong> with comprehensive Swagger/OpenAPI
+                                documentation.</li>
+                            <li>Implemented <strong>JWT and OAuth2</strong> authentication flows for secure, role-based
+                                application access.</li>
+                            <li>Optimized complex <strong>SQL Server</strong> and MySQL queries, stored procedures, and
+                                functions for performance gains.</li>
+                            <li>Applied <strong>Entity Framework Core</strong> and LINQ for clean, maintainable data
+                                access layers.</li>
+                            <li>Actively participated in Agile/Scrum ceremonies including sprint planning,
+                                retrospectives, and stand-ups.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills <span class="gradient-text">Profile</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon">⚙️</div>
+                    <h3 class="skill-cat-title">Languages & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">ASP.NET Core</span>
+                        <span class="skill-tag">Entity Framework Core</span>
+                        <span class="skill-tag">.NET Core</span>
+                        <span class="skill-tag">MVC</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon">🌐</div>
+                    <h3 class="skill-cat-title">API & Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Swagger / OpenAPI</span>
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">OAuth2</span>
+                        <span class="skill-tag">Layer Architecture</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon">🗄️</div>
+                    <h3 class="skill-cat-title">Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL Server (T-SQL)</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Stored Procedures</span>
+                        <span class="skill-tag">LINQ</span>
+                        <span class="skill-tag">Query Optimization</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon">🎨</div>
+                    <h3 class="skill-cat-title">Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">Angular Basics</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon">🛠️</div>
+                    <h3 class="skill-cat-title">Tools & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitLab</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">IIS Server</span>
+                        <span class="skill-tag">Agile / Scrum</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <div class="skill-cat-icon">🏛️</div>
+                    <h3 class="skill-cat-title">Architecture & Patterns</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">Design Patterns</span>
+                        <span class="skill-tag">Distributed Systems</span>
+                        <span class="skill-tag">Performance Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-dark" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">🏭</div>
+                        <div class="project-links">
+                            <span class="source-badge">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                                    <path
+                                        d="M22.23 5.924c-.806.358-1.67.6-2.577.708a4.515 4.515 0 001.98-2.49 9.028 9.028 0 01-2.861 1.095 4.51 4.51 0 00-7.69 4.11 12.8 12.8 0 01-9.296-4.716 4.51 4.51 0 001.396 6.015 4.49 4.49 0 01-2.044-.564v.057a4.512 4.512 0 003.617 4.42 4.52 4.52 0 01-2.038.077 4.513 4.513 0 004.213 3.13A9.05 9.05 0 010 19.54a12.77 12.77 0 006.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.17 9.17 0 002.252-2.336l.234.117z" />
+                                </svg>
+                                GitLab
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Lenovo ISO Portal</h3>
+                    <p class="project-subtitle">EMS · QMS · OHS Compliance System</p>
+                    <p class="project-desc">
+                        Enterprise ISO standards management portal for Lenovo's internal process flow. Handles
+                        department auditing, corrective actions, environmental objectives, multi-level approvals, and
+                        OHS hazard recording — all within a single integrated platform.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature-item">✅ Department Audit Workflows</div>
+                        <div class="feature-item">✅ Corrective Action Tracking</div>
+                        <div class="feature-item">✅ Multi-Level Approvals</div>
+                        <div class="feature-item">✅ OHS Hazard Recording</div>
+                    </div>
+                    <div class="project-stack">
+                        <span class="stack-tag">.NET Core</span>
+                        <span class="stack-tag">SQL Server</span>
+                        <span class="stack-tag">IIS</span>
+                        <span class="stack-tag">GitLab</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">🏭</div>
+                        <div class="project-links">
+                            <span class="source-badge">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                Git
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Lenovo DWI</h3>
+                    <p class="project-subtitle">Video-Based Assembly Training System</p>
+                    <p class="project-desc">
+                        Smart training platform for Lenovo system assemblers. Devices are scanned one-by-one during
+                        assembly, and the system automatically retrieves and plays the corresponding instructional video
+                        — streamlining onboarding and reducing assembly errors on the production floor.
+                    </p>
+                    <div class="project-features">
+                        <div class="feature-item">✅ Barcode / Device Scanning</div>
+                        <div class="feature-item">✅ Auto Video Playback</div>
+                        <div class="feature-item">✅ Windows App + Web API</div>
+                        <div class="feature-item">✅ Real-time Assembly Guide</div>
+                    </div>
+                    <div class="project-stack">
+                        <span class="stack-tag">Windows App</span>
+                        <span class="stack-tag">.NET Core Web API</span>
+                        <span class="stack-tag">MySQL</span>
+                        <span class="stack-tag">IIS Server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section class="section" id="ai-tools">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Modern Stack</span>
+                <h2 class="section-title">AI Tools <span class="gradient-text">Arsenal</span></h2>
+                <p class="section-subtitle">Leveraging cutting-edge AI to supercharge development workflows</p>
+            </div>
+            <div class="ai-category">
+                <h3 class="ai-category-title">🖥️ Development Environment</h3>
+                <div class="ai-tools-grid">
+                    <div class="ai-card" id="ai-antigravity">
+                        <div class="ai-card-glow"></div>
+                        <div class="ai-card-inner">
+                            <div class="ai-logo-wrap ai-logo-ag">AG</div>
+                            <div class="ai-info">
+                                <h4 class="ai-name">Antigravity</h4>
+                                <p class="ai-desc">AI-powered development environment focused on intelligent code
+                                    assistance, workflow automation, and productivity enhancement for modern software
+                                    projects.</p>
+                            </div>
+                            <div class="ai-badge">Env</div>
+                        </div>
+                    </div>
+                    <div class="ai-card" id="ai-coder">
+                        <div class="ai-card-glow"></div>
+                        <div class="ai-card-inner">
+                            <div class="ai-logo-wrap ai-logo-coder">CR</div>
+                            <div class="ai-info">
+                                <h4 class="ai-name">Coder</h4>
+                                <p class="ai-desc">Cloud-based development workspace platform enabling secure remote
+                                    coding environments, containerized development setups, and team collaboration.</p>
+                            </div>
+                            <div class="ai-badge">Cloud</div>
+                        </div>
+                    </div>
+                    <div class="ai-card" id="ai-cursor">
+                        <div class="ai-card-glow"></div>
+                        <div class="ai-card-inner">
+                            <div class="ai-logo-wrap ai-logo-cursor">CU</div>
+                            <div class="ai-info">
+                                <h4 class="ai-name">Cursor</h4>
+                                <p class="ai-desc">AI-integrated code editor designed to accelerate development using
+                                    real-time AI suggestions, code generation, debugging assistance, and refactoring
+                                    support.</p>
+                            </div>
+                            <div class="ai-badge">Editor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-category">
+                <h3 class="ai-category-title">🤖 AI Assistance</h3>
+                <div class="ai-tools-grid ai-tools-grid-2">
+                    <div class="ai-card" id="ai-claude">
+                        <div class="ai-card-glow"></div>
+                        <div class="ai-card-inner">
+                            <div class="ai-logo-wrap ai-logo-claude">CL</div>
+                            <div class="ai-info">
+                                <h4 class="ai-name">Claude</h4>
+                                <p class="ai-desc">Advanced AI assistant used for technical documentation, code
+                                    explanation, problem solving, and software architecture discussions with strong
+                                    contextual reasoning capabilities.</p>
+                            </div>
+                            <div class="ai-badge">Reasoning</div>
+                        </div>
+                    </div>
+                    <div class="ai-card" id="ai-chatgpt">
+                        <div class="ai-card-glow"></div>
+                        <div class="ai-card-inner">
+                            <div class="ai-logo-wrap ai-logo-gpt">GP</div>
+                            <div class="ai-info">
+                                <h4 class="ai-name">ChatGPT</h4>
+                                <p class="ai-desc">AI conversational assistant used for code generation, debugging,
+                                    system design guidance, documentation drafting, and technical research across
+                                    full-stack development environments.</p>
+                            </div>
+                            <div class="ai-badge">Generation</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-dark" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Open to exciting opportunities and collaborations</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card" id="contact-phone">
+                    <div class="contact-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28"
+                            height="28">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <a href="tel:+917694909063" class="contact-link">+91 7694909063</a>
+                </div>
+                <div class="contact-card" id="contact-linkedin">
+                    <div class="contact-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                            <path
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/harish5630145" target="_blank" rel="noopener"
+                        class="contact-link">harish5630145</a>
+                </div>
+                <div class="contact-card" id="contact-company">
+                    <div class="contact-icon-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28"
+                            height="28">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </div>
+                    <h3>Company</h3>
+                    <span class="contact-link">Twilight IT Solutions</span>
+                </div>
+                <div class="contact-card contact-card-resume" id="contact-resume">
+                    <div class="contact-icon-wrap contact-icon-resume">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28"
+                            height="28">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                    </div>
+                    <h3>Resume</h3>
+                    <a href="https://docs.google.com/document/d/12Pq0ud7dIc7TRy4MyaT0mepz4jh_bcec/edit?usp=drivesdk&ouid=115026524606690086604&rtpof=true&sd=true"
+                        target="_blank" rel="noopener" class="contact-link resume-download-link"
+                        id="contact-resume-btn">
+                        📄 View Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>H<span class="logo-bracket">/&gt;</span>
+            </div>
+            <p class="footer-text">Designed & Built by Harish · .NET Developer</p>
+            <p class="footer-copy">© 2025 Harish</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
